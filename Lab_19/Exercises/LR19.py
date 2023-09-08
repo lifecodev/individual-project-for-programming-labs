@@ -418,6 +418,9 @@ class Dislocation:
         self.__queue.append(Transaction(self.__filename, "Изменена занимаема площадь", self.__area, new_area))
         self.__area = new_area
 
+    def changeCountry(self, new_country):
+        self.__queue.append(Transaction(self.__filename, "Изменена страна", self.__country, new_country))
+        self.__country = new_country
 
 class Part:
     ''' Класс Part описывает воинскую часть.'''
